@@ -1,0 +1,206 @@
+@import './defin';
+.borrow {
+    @include flex;
+    width: 100%;
+    justify-content: flex-start;
+    .bar {
+        @include flex;
+        width: 100%;
+        height: var(--status-bar-height);
+        background: #ffffff;
+    }
+    .search-box {
+        position: relative;
+        z-index: 22;
+        @include flex(row);
+        width: 100%;
+        padding: 10upx 30upx;
+        background-color: #ffffff;
+        .content {
+            position: relative;
+            @include flex(row);
+            flex: 1;
+            .logo {
+                position: absolute;
+                left: 20upx;
+                top: 21upx;
+                @include flex;
+                width: 30upx;
+                height: 29upx;
+            }
+            .search {
+                @include inline-block;
+                width: 100%;
+                height: 70upx;
+                padding: 0 0 0 71upx;
+                font-family: "PingFang-SC-Medium";
+                @include font-size(24upx, 70upx);
+                color: #232323;
+                font-weight: 500;
+                background-color: #EEEEEE;
+                border-radius: 35upx;
+                &.grey {
+                    color: #DDDDDD;
+                }
+            }
+            .close-box {
+                position: absolute;
+                right: 0;
+                top: 0;
+                z-index: 2;
+                @include flex;
+                width: 70upx;
+                height: 70upx;
+                .close {
+                    @include flex;
+                    width: 30upx;
+                    height: 30upx;
+                }
+            }
+        }
+        .cancel {
+            @include flex;
+            height: 70upx;
+            padding-left: 21upx;
+            @include font-size(24upx);
+            color: #222222;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+    }
+    .operating {
+        position: relative;
+        z-index: 12;
+        @include flex;
+        width: 100%;
+        background-color: #ffffff;
+        border-top: 1upx solid #EEEEEE;
+        &.fixed {
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: 11;
+        }
+        .items {
+			padding-left: 30upx;
+            position: relative;
+            z-index: 1;
+            @include flex(row);
+            width: 100%;
+            justify-content: flex-start;
+            border-bottom: 1upx solid #EEEEEE;
+            .item {
+                @include flex(row);
+                width: calc(100% / 4);
+                padding: 30upx 0;
+                @include font-size(28upx);
+                color: #666666;
+                font-weight: bold;
+                &.active {
+                    font-family: 'PingFang-SC-Medium';
+                    color: #222222;
+                }
+            }
+        }
+    }
+    .container {
+        @include flex;
+        width: 100%;
+    }
+    .sort {
+        position: absolute;
+        left: 0;
+        top: 94upx;
+        @include flex(row);
+        width: 100%;
+        padding: 30upx 30upx 50upx;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        min-height: auto;
+        background-color: #ffffff;
+        .item {
+            @include flex;
+            width: 196upx;
+            height: 70upx;
+            margin-top: 20upx;
+            // padding: 22upx 21upx;
+            @include font-size(26upx);
+            color: #333333;
+            border: 1upx solid #EEEEEE;
+            border-radius: 4upx;
+            &.active {
+                color: #FF5555;
+                border-color: #FF5555;
+            }
+        }
+    }
+    .selected {
+        position: absolute;
+        left: 0;
+        top: 94upx;
+        @include flex;
+        width: 100%;
+        padding: 0 30upx;
+        min-height: auto;
+        background-color: #ffffff;
+        .title {
+            @include flex;
+            width: 100%;
+            padding: 40upx 0 39upx;
+            align-items: flex-start;
+            font-family: 'PingFang-SC-Medium';
+            @include font-size(30upx);
+            color: #222222;
+            font-weight: 500;
+        }
+        .write-box {
+            @include flex(row);
+            width: 100%;
+            justify-content: space-between;
+            @include font-size(36upx);
+            color: #222222;
+            .search {
+                @include flex;
+                width: 300upx;
+                height: 70upx;
+                @include font-size(26upx, 70upx);
+                color: #BBBBBB;
+                text-align: center;
+                background-color: #EEEEEE;
+                border-radius: 4upx;
+            }
+        }
+        .items {
+            @include flex(row);
+            width: 100%;
+            margin-top: -20upx;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .item {
+                @include flex;
+                width: 158upx;
+                height: 70upx;
+                margin-top: 20upx;
+                @include font-size(26upx);
+                color: #333333;
+                border: 1upx solid #EEEEEE;
+                border-radius: 4upx;
+                font-weight: 400;
+                &.active {
+                    color: #FF5555;
+                    border-color: #FF5555;
+                }
+            }
+        }
+        .btn-box {
+            @include flex(row);
+            width: 100%;
+            padding: 50upx 0 51upx;
+            justify-content: space-between;            
+            .base-btn {
+                width: 335upx;
+            }
+        }
+    }
+}

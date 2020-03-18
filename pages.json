@@ -1,0 +1,308 @@
+{
+	"pages": [
+		{
+			"path": "pages/index/index",
+			"style": {
+				"enablePullDownRefresh": true,
+				"app-plus": {
+					"titleNView": {
+						"type": "transparent"
+					},
+					"pullToRefresh": {
+						"style": "default",
+						"contentdown": {
+							"caption": "下拉可以刷新"
+						},
+						"contentover": {
+							"caption": "释放立即刷新"
+						},
+						"contentrefresh": {
+							"caption": "正在刷新..."
+						}
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/notice/index",
+			"style": {
+				"enablePullDownRefresh": true,
+				"navigationBarTitleText": "消息中心",
+				"app-plus": {
+					"pullToRefresh": {
+						"style": "default",
+						"contentdown": {
+							"caption": "下拉可以刷新"
+						},
+						"contentover": {
+							"caption": "释放立即刷新"
+						},
+						"contentrefresh": {
+							"caption": "正在刷新..."
+						}
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/notice/detail",
+			"style": {
+				"navigationBarTitleText": "消息详情"
+			}
+		},
+		{
+			"path": "pages/borrow/index",
+			"style": {
+				"enablePullDownRefresh": true,
+				"app-plus": {
+					"titleNView": false,
+					"pullToRefresh": {
+						"style": "default",
+						"contentdown": {
+							"caption": "下拉可以刷新"
+						},
+						"contentover": {
+							"caption": "释放立即刷新"
+						},
+						"contentrefresh": {
+							"caption": "正在刷新..."
+						}
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/borrow/search",
+			"style": {
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		},
+		{
+			"path": "pages/borrow/detail",
+			"style": {
+				"navigationBarTitleText": "平台详情",
+				"enablePullDownRefresh": true,
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "\ue600",
+							"fontSrc": "./static/fonts/icon.ttf",
+							"fontSize": "22px"
+						}]
+					},
+					"pullToRefresh": {
+						"style": "default",
+						"contentdown": {
+							"caption": "下拉可以刷新"
+						},
+						"contentover": {
+							"caption": "释放立即刷新"
+						},
+						"contentrefresh": {
+							"caption": "正在刷新..."
+						}
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/users/index",
+			"style": {
+				"enablePullDownRefresh": true,
+				"app-plus": {
+					"titleNView": {
+						"type": "transparent"
+					},
+					"pullToRefresh": {
+						"style": "default",
+						"contentdown": {
+							"caption": "下拉可以刷新"
+						},
+						"contentover": {
+							"caption": "释放立即刷新"
+						},
+						"contentrefresh": {
+							"caption": "正在刷新..."
+						}
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/users/info",
+			"style": {
+				"enablePullDownRefresh": true,
+				"navigationBarTitleText": "个人资料",
+				"app-plus": {
+					"pullToRefresh": {
+						"style": "default",
+						"contentdown": {
+							"caption": "下拉可以刷新"
+						},
+						"contentover": {
+							"caption": "释放立即刷新"
+						},
+						"contentrefresh": {
+							"caption": "正在刷新..."
+						}
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/users/setInfo",
+			"style": {
+				"navigationBarTitleText": "个人资料"
+			}
+		},
+		{
+			"path": "pages/users/history",
+			"style": {
+				"enablePullDownRefresh": true,
+				"navigationBarTitleText": "访问记录",
+				"app-plus": {
+					"pullToRefresh": {
+						"style": "default",
+						"contentdown": {
+							"caption": "下拉可以刷新"
+						},
+						"contentover": {
+							"caption": "释放立即刷新"
+						},
+						"contentrefresh": {
+							"caption": "正在刷新..."
+						}
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/users/help",
+			"style": {
+				"enablePullDownRefresh": true,
+				"navigationBarTitleText": "反馈与帮助",
+				"app-plus": {
+					"pullToRefresh": {
+						"style": "default",
+						"contentdown": {
+							"caption": "下拉可以刷新"
+						},
+						"contentover": {
+							"caption": "释放立即刷新"
+						},
+						"contentrefresh": {
+							"caption": "正在刷新..."
+						}
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/users/opinion",
+			"style": {
+				"navigationBarTitleText": "意见反馈"
+			}
+		},
+		{
+			"path": "pages/users/set",
+			"style": {
+				"navigationBarTitleText": "设置"
+			}
+		},
+		{
+			"path": "pages/login/code",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		},
+		{
+			"path": "pages/login/password",
+			"style": {
+				"navigationBarTitleText": "密码登录",
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		},
+		{
+			"path": "pages/forget/index",
+			"style": {
+				"navigationBarTitleText": "找回密码"
+			}
+		},
+		{
+			"path": "pages/forget/password",
+			"style": {
+				"navigationBarTitleText": "找回密码",
+				"app-plus": {
+					"AnimationTypeShow": "slide-in-bottom"
+				}
+			}
+		},
+		{
+			"path": "pages/register/index",
+			"style": {
+				"navigationBarTitleText": "注册",
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		},
+		{
+			"path": "pages/register/password",
+			"style": {
+				"navigationBarTitleText": "注册"
+			}
+		},
+		{
+			"path": "pages/agreement/register",
+			"style": {
+				"navigationBarTitleText": "乐开花用户协议"
+			}
+		},
+		{
+			"path": "pages/web",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		}
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "乐开花",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#F6F6FB",
+		"backgroundColorTop": "#F6F6FB",
+		"backgroundColorBottom": "#F6F6FB"
+	},
+	"tabBar": {
+		"color": "#9EA6BA",
+		"selectedColor": "#FF5555",
+		"backgroundColor": "#FFFFFF",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"iconPath": "static/tabBar-index.png",
+				"selectedIconPath": "static/tabBar-index-active.png"
+			},
+			{
+				"pagePath": "pages/borrow/index",
+				"text": "贷款超市",
+				"iconPath": "static/tabBar-borrow.png",
+				"selectedIconPath": "static/tabBar-borrow-active.png"
+			},
+			{
+				"pagePath": "pages/users/index",
+				"text": "我的",
+				"iconPath": "static/tabBar-users.png",
+				"selectedIconPath": "static/tabBar-users-active.png"
+			}
+		]
+	}
+}

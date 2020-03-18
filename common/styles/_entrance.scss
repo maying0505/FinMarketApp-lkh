@@ -1,0 +1,163 @@
+@import './defin';
+.entrance {
+    @include flex;
+    width: 100%;
+    min-height: 100%;
+    padding: 0 30upx;
+    justify-content: flex-start;
+	align-items: flex-start;
+    background-color: #ffffff;
+    .close-box {
+        @include flex;
+        width: 20%;
+        align-items: flex-start;
+        .bar {
+            @include flex;
+            width: 34upx;
+            height: var(--status-bar-height);
+        }
+        .close {
+            @include flex;
+            width: 34upx;
+            height: 34upx;
+            margin-top: 42upx;
+        }
+    }
+    .theme {
+        @include flex;
+        width: 100%;
+        margin-top: 106upx;
+        align-items: flex-start;
+        .title {
+            @include flex;
+            font-family:' PingFang-SC-Medium';
+            @include font-size(54upx);
+            color: #222222;
+            font-weight: bold;
+        } 
+        .info {
+            @include flex(row);
+            width: 100%;
+            margin-top: 31upx;
+            justify-content: flex-start;
+            .logo {
+                position: relative;
+                top: -1upx;
+                @include flex;
+                width: 27upx;
+                height: 33upx;
+                margin-right: 20upx;
+            }
+            .txt {
+                @include flex;
+                @include font-size(24upx);
+                color: #FF7B28;
+                font-weight: bold;
+            }
+        }
+    }
+    .operating {
+        @include flex;
+        width: 100%;
+        margin-top: 96upx;
+        .write {
+            position: relative;
+            @include flex;
+            width: 100%;
+            height: 98upx;
+            padding: 50upx 0 19upx;
+            border-bottom: 2upx solid #EEEEEE;
+            input {
+                @include inline-block;
+                width: 100%;
+                @include font-size(30upx);
+                color: #222222;
+                font-weight: bold;
+                text-align: left;
+            }
+            .assistant {
+                position: absolute;
+                right: 0;
+                top: 0;
+                z-index: 2;
+                @include flex(row);
+                width: auto;
+                height: 98upx;
+                .line {
+                    @include flex;
+                    width: 1upx;
+                    height: 24upx;
+                    margin-right: 20upx;
+                    background-color: #EEEEEE;
+                }
+                .btn {
+                    @include flex;
+                    padding: 0;
+                    @include font-size(24upx);
+                    color: #2A528E;
+                    font-weight: bold;
+                    background: transparent;
+                    border-radius: 0;
+                    &.highlight {
+                        padding: 20upx;
+                        @include font-size(24upx);
+                        color: #FF7B28;
+                        background-color: #FAF0EB;
+                        border-radius: 4upx;
+                    }
+                }
+                .pic {
+                    @include flex;
+                    width: 110upx;
+                    height: 48upx;
+                }
+            }
+        }
+        .msg {
+            @include inline-block;
+            width: 100%;
+            padding: 20upx 0;
+            @include font-size(24upx);
+            color: #666666;
+            text-align: left;
+            font-weight: bold;
+        }
+        .base-btn {
+            margin-top: 60upx;
+        }
+        .method {
+            @include flex;
+            width: 100%;
+            padding: 50upx 0;
+            align-items: flex-end;
+            &.center {
+                align-items: center;
+            }
+            .btn {
+                @include flex;
+                @include font-size(30upx);
+                color: #2A528E;
+                font-weight: bold;
+            }
+        }
+    }
+    .tips {
+        @include flex;
+        width: 100%;
+        flex: 1;
+        justify-content: flex-end;
+        padding: 50upx 0 100upx;
+        .txt {
+            @include inline-block;
+            width: 100%;
+            @include font-size(24upx);
+            color: #AAAAAA;
+            font-weight: bold;
+            text-align: center;
+            .highlight {
+                display: inline;
+                color: #2A528E;
+            }
+        }
+    }
+}
